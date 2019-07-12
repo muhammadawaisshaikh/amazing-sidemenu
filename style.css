@@ -55,7 +55,7 @@ body {
     list-style: none;
     margin-bottom: 0;
     padding-left: 0;
-    padding: 20% 0 0 10%;
+    padding: 15% 0 0 10%;
 }
 
 .sidebar ul li a {
@@ -84,6 +84,7 @@ body {
 .sidebar .bottom-thing{
     position: fixed;
     bottom: 5%;
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -107,4 +108,13 @@ body {
 
 .fade-area.show{
     display: block;
+}
+
+.socials {
+    padding: 10% 0 0 10%;
+}
+
+.socials a {
+    font-size: 25px;
+    padding: 0 5px 0 5px;
 }
