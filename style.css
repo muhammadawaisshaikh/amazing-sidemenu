@@ -1,0 +1,46 @@
+.toggleContainer {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
+.bar1, .bar2, .bar3 {
+    border-radius: 10px;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.5s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+    background-color: #fff;
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -9px);
+    transform: rotate(45deg) translate(-9px, -9px);
+    background-color: #fff;
+  }
+
+.sidebar {
+    position: fixed;
+    width: 50%;
+    background: #d93b45;
+    color: #ffffff;
+    right: -50%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.sidebar.show{
+    right: 0;
+}
