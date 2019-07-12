@@ -84,7 +84,6 @@ body {
 .sidebar .bottom-thing{
     position: fixed;
     bottom: 5%;
-    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
