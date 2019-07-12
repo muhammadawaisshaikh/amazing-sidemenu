@@ -62,11 +62,26 @@ body {
     color: #fff;
     font-size: 50px;
     font-weight: 900;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #000;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .sidebar ul li
 {
     padding: 10px 0 10px 0;
+}
+
+.sidebar .bottom-thing{
+    position: fixed;
+    bottom: 5%;
 }
 
 @media only screen and (max-width: 600px) {
