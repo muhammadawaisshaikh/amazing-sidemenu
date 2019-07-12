@@ -54,7 +54,7 @@ body {
     list-style: none;
     margin-bottom: 0;
     padding-left: 0;
-    padding: 10% 0 0 10%;
+    padding: 20% 0 0 10%;
 }
 
 .sidebar ul li a {
@@ -67,4 +67,11 @@ body {
 .sidebar ul li
 {
     padding: 10px 0 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        right: -100%;
+    }
 }
