@@ -35,7 +35,7 @@ body {
     background-color: #fff;
   }
 
-.sidebar {
+.sidebar.side {
     position: fixed;
     width: 50%;
     background: #d93b45;
@@ -47,8 +47,23 @@ body {
     transition: 0.8s;
 }
 
-.sidebar.show{
+.sidebar.flap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #d93b45;
+    color: #ffffff;
+    top: -100%;
+    z-index: 1;
+    transition: 0.8s;
+}
+
+.sidebar.side.show{
     right: 0;
+}
+
+.sidebar.flap.show{
+    top: 0;
 }
 
 .sidebar ul {
@@ -87,7 +102,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .sidebar {
+    .sidebar.side {
         width: 100%;
         right: -100%;
     }
